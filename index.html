@@ -1,0 +1,38 @@
+<html>
+<body style="background-color:black;">
+
+<!--
+Thingspeak API Syntax
+For more options see:
+https://www.mathworks.com/help/thingspeak/create-a-chart.html
+
+http://api.thingspeak.com/channels/<channel_ID>/charts/<field_ID>?
+api_key=<API_key--use_if_private_channel>&
+results=<#_data_points>&
+offset=<time_zone_offset>&
+round=<rounding_level>&
+width=<plot_width_or_auto>&
+height=<plot_height_or_auto>&
+dynamic=<true_or_false>&
+yaxis=<y-axis_label>&
+xaxis=<x-axis_label>&
+title=<title>"
+-->
+<center>
+<iframe width="700" height="250" style="border: 1px solid #cccccc;" 
+src="http://api.thingspeak.com/channels/360745/charts/1?&width=auto& height=auto&dynamic=true&yaxis=Wind Direction&xaxis=time&title=Wind Direction&color=orange&type=spline&results=20"></iframe>
+
+<iframe width="700" height="250" style="border: 1px solid #cccccc;" 
+src="http://api.thingspeak.com/channels/360745/charts/2?width=auto& height=auto&dynamic=true&yaxis=Wind Speed (rev/s)&xaxis=time&title=Wind Speed&color=green&type=spline&results=20"></iframe>
+
+<iframe width="700" height="250" style="border: 1px solid #cccccc;" 
+src="http://api.thingspeak.com/channels/360745/charts/3?width=auto& height=auto&dynamic=true&yaxis=Temperature (Celsius)&xaxis=time&title=Temperature&color=red&type=spline&results=20"></iframe>
+
+<iframe width="700" height="250" style="border: 1px solid #cccccc;" 
+src="http://api.thingspeak.com/channels/360745/charts/4?width=auto& height=auto&dynamic=true&yaxis=Humidity (Percent)&xaxis=time&title=Humidity&color=blue&type=spline&results=20"></iframe>
+
+<iframe width="700" height="250" style="border: 1px solid #cccccc;" 
+src="http://api.thingspeak.com/channels/360745/charts/5?width=auto& height=auto&dynamic=true&yaxis=Pressure (millibar)&xaxis=time&title=Pressure&color=black&type=spline&results=20"></iframe>
+</center>
+</body>
+</html>
